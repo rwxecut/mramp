@@ -1,0 +1,285 @@
+m-window.playlist m-title {
+	padding-left: 1px;
+}
+
+m-window.playlist m-vscroll-bar {
+	height: 261px;
+	width: 6px;
+	margin: 4px 1px 0 2px;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+	cursor: url(/img/cur/PVSCROLL.CUR), pointer;
+}
+m-window.playlist m-vscroll-bar div {
+	height: 18px;
+	width: 8px;
+	margin: 0 100% 0 -1px;
+	background-image: url(/img/scrollplbar.svg);
+	cursor: url(/img/cur/PVSCROLL.CUR), pointer;
+}
+m-window.playlist m-vscroll-bar:active div {
+	background-image: url(/img/scrollplbar-pressed.svg);
+}
+
+m-window.playlist m-button.small.playback {
+	margin-top: 2px;
+}
+
+m-window.playlist m-button.small.playback.prev {
+	margin-left: 9px;
+}
+
+m-window.playlist m-button.small.playback.eject {
+	margin-right: 3px;
+}
+
+m-drawer {
+	display: flex;
+	height: 18px;
+	margin: 7px 0 6px 4px;
+}
+
+m-drawer m-border {
+	display: block;
+	width: 2px;
+	margin: 1px 0px 1px 0px;
+	border-radius: 18px 0 0 18px;
+	background-image: url(/img/selplborder.svg);
+}
+
+m-drawer m-button {
+	width: 23px;
+	height: 18px;
+}
+
+m-drawer>div { display:none; }
+
+m-drawer>div m-button:hover {}
+
+m-drawer.expanded {
+	height: 54px;
+	/*margin-top: -36px;*/
+	margin: -29px 0 6px 4px;
+}
+m-drawer.expanded.four {
+	height: 72px;
+	/*margin-top: -54px;*/
+	margin: -47px 0 6px 4px;
+}
+m-drawer.expanded>m-button { display: none; }
+m-drawer.expanded>div { display:block; }
+
+m-drawer m-button.add {
+	background-image: url(/img/addplbtn.svg);
+}
+m-drawer m-button.addurl {
+	background-image: url(/img/urlplbtn.svg);
+}
+m-drawer m-button.adddir {
+	background-image: url(/img/dirplbtn.svg);
+}
+m-drawer m-button.addfile {
+	background-image: url(/img/fileplbtn.svg);
+}
+m-drawer m-button.adddir:hover {
+	background-image: url(/img/dirplbtn-pressed.svg);
+}
+m-drawer m-button.addurl:hover {
+	background-image: url(/img/urlplbtn-pressed.svg);
+}
+m-drawer m-button.addfile:hover {
+	background-image: url(/img/fileplbtn-pressed.svg);
+}
+
+m-drawer m-button.rem {
+	background-image: url(/img/remplbtn.svg);
+}
+m-drawer m-button.remmisc {
+	background-image: url(/img/rmiscplbtn.svg);
+}
+m-drawer m-button.remall {
+	background-image: url(/img/rallplbtn.svg);
+}
+m-drawer m-button.crop {
+	background-image: url(/img/cropplbtn.svg);
+}
+m-drawer m-button.remsel {
+	background-image: url(/img/rselplbtn.svg);
+}
+m-drawer m-button.remmisc:hover {
+	background-image: url(/img/rmiscplbtn-pressed.svg);
+}
+m-drawer m-button.remall:hover {
+	background-image: url(/img/rallplbtn-pressed.svg);
+}
+m-drawer m-button.crop:hover {
+	background-image: url(/img/cropplbtn-pressed.svg);
+}
+m-drawer m-button.remsel:hover {
+	background-image: url(/img/rselplbtn-pressed.svg);
+}
+
+m-drawer m-button.sel {
+	background-image: url(/img/selplbtn.svg);
+}
+m-drawer m-button.invsel {
+	background-image: url(/img/invplbtn.svg);
+}
+m-drawer m-button.selzero {
+	background-image: url(/img/zeroplbtn.svg);
+}
+m-drawer m-button.selall {
+	background-image: url(/img/sallplbtn.svg);
+}
+m-drawer m-button.invsel:hover {
+	background-image: url(/img/invplbtn-pressed.svg);
+}
+m-drawer m-button.selzero:hover {
+	background-image: url(/img/zeroplbtn-pressed.svg);
+}
+m-drawer m-button.selall:hover {
+	background-image: url(/img/sallplbtn-pressed.svg);
+}
+
+m-drawer m-button.misc {
+	background-image: url(/img/miscplbtn.svg);
+}
+m-drawer m-button.sortlist {
+	background-image: url(/img/msortplbtn.svg);
+}
+m-drawer m-button.fileinf {
+	background-image: url(/img/infplbtn.svg);
+}
+m-drawer m-button.miscopts {
+	background-image: url(/img/optsplbtn.svg);
+}
+m-drawer m-button.sortlist:hover {
+	background-image: url(/img/msortplbtn-pressed.svg);
+}
+m-drawer m-button.fileinf:hover {
+	background-image: url(/img/infplbtn-pressed.svg);
+}
+m-drawer m-button.miscopts:hover {
+	background-image: url(/img/optsplbtn-pressed.svg);
+}
+
+m-drawer m-button.list {
+	background-image: url(/img/listplbtn.svg);
+}
+m-drawer m-button.newlist {
+	background-image: url(/img/nlistplbtn.svg);
+}
+m-drawer m-button.savelist {
+	background-image: url(/img/slistplbtn.svg);
+}
+m-drawer m-button.loadlist {
+	background-image: url(/img/ldlistplbtn.svg);
+}
+m-drawer m-button.newlist:hover {
+	background-image: url(/img/nlistplbtn-pressed.svg);
+}
+m-drawer m-button.savelist:hover {
+	background-image: url(/img/slistplbtn-pressed.svg);
+}
+m-drawer m-button.loadlist:hover {
+	background-image: url(/img/ldlistplbtn-pressed.svg);
+}
+
+m-button.scroll {
+	height: 4px;
+	width: 8px;
+	margin-left: 7px;
+}
+m-button.scroll.up {
+	margin-top: 1px;
+	background-image: url(/img/scrollupplbtn.svg);
+}
+m-button.scroll.down {
+	margin-top: 2px;
+	background-image: url(/img/scrolldownplbtn.svg);
+}
+
+m-button.title.drag {
+	width: 8px;
+	height: 8px;
+	margin-right: -1px;
+	background-image: url(/img/drag.svg);
+}
+m-window:hover m-button.title.drag {
+	border: none;
+	background-image: url(/img/drag-pressed.svg);
+}
+
+m-drag-zone {
+	display: block;
+	height: 13px;
+	width: 13px;
+	margin: 7px 0 0 3px;
+	background-image: url(/img/dragzone.svg);
+	cursor: url(/img/cur/PSIZE.CUR), pointer;
+}
+
+m-window.playlist m-black-area.songtitle {
+	height: 10px;
+	flex: 1;
+	margin: -1px 0 -1px -1px;
+}
+
+m-black-area.playlist {
+	width: 239px;
+	margin: 4px 1px 0 3px;
+	padding: 0 4px 0 2px;
+	font-family: monospace;
+	font-size: 10px;
+	color: rgb(0,255,0);
+}
+
+m-black-area.playlist m-track {
+	display: flex;
+	margin-top: 3px;
+}
+m-black-area.playlist m-track.highlighted { color: white; }
+m-black-area.playlsit m-track.selected {
+	color: white;
+	background-color: blue;
+}
+
+m-black-area.playlist m-track div:nth-of-type(2) {
+	display: block;
+	flex: 1;
+	margin: 0 0.5em 0 0.5em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+m-window.playlist m-black-area.time {
+	font-family: monospace;
+	font-size: 9px;
+	color: #00ff00;
+}
+
+m-window.playlist m-black-area.time.all { display: block; }
+
+m-window.playlist m-black-area.time.estimate {
+	display: flex;
+	align-items: center;
+}
+m-window.playlist m-black-area.time.estimate div:nth-of-type(1) {
+	flex: 1;
+	text-align: right;
+}
+
+m-black-area.time.all {
+	width: 89px;
+	height: 10px;
+	margin: 6px 1px 2px 7px;
+}
+
+m-black-area.time.estimate {
+	width: 32px;
+	height: 8px;
+}
+

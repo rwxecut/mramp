@@ -1,0 +1,20 @@
+#auth .content > .row {
+	margin-left: 4px;
+}
+#auth .field {
+	width: 100%;
+	margin: 5px 4px 0 4px;
+}
+#auth .label#password {
+	margin-right: 1px;
+}
+#auth .textbtn {
+	width: 51px;
+	height: 16px;
+}
+#loginbtn {
+	margin: 4px 8px 4px 137px;
+}
+#canclogbtn {
+	margin: 4px 0 4px 0;
+}

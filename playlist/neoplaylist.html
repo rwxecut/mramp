@@ -1,0 +1,96 @@
+<m-title ondblclick="playlist.addcls('minified');">
+	<m-bar></m-bar>
+	<m-label>MRAMP PLAYLIST</m-label>
+	<m-bar></m-bar>
+	<m-button class="title mini" onclick="playlist.addcls('minified');"></m-button>
+	<m-button class="title close" onclick="playlist.addcls('hidden');"></m-button>
+</m-title>
+<m-mini-title>
+	<m-black-area class="songtitle"></m-black-area>
+	<m-button class="title drag"></m-button>
+	<m-button class="title max" onclick="playlist.rmcls('minified');"></m-button>
+	<m-button class="title close" onclick="playlist.addcls('hidden');"></m-button>
+</m-mini-title>
+<m-content>
+	<m-row>
+		<m-black-area class="playlist">
+			<m-track>
+				<div>1.</div>
+				<div>Test</div>
+				<div>3:45</div>
+			</m-track>
+		</m-black-area>
+		<m-vscroll-bar>
+			<div></div>
+		</m-vscroll-bar>
+	</m-row>
+	<m-row>
+		<m-drawer onclick="playlist.drawer(this);">
+			<m-border></m-border>
+			<m-button class="add"></m-button>
+			<div>
+				<m-button class="addurl"></m-button>
+				<m-button class="adddir"></m-button>
+				<m-button class="addfile"></m-button>
+			</div>
+		</m-drawer>
+		<m-drawer class="four" onclick="playlist.drawer(this);">
+			<m-border></m-border>
+			<m-button class="rem"></m-button>
+			<div>
+				<m-button class="remmisc"></m-button>
+				<m-button class="remall"></m-button>
+				<m-button class="crop"></m-button>
+				<m-button class="remsel"></m-button>
+			</div>
+		</m-drawer>
+		<m-drawer onclick="playlist.drawer(this);">
+			<m-border></m-border>
+			<m-button class="sel"></m-button>
+			<div>
+				<m-button class="invsel"></m-button>
+				<m-button class="selzero"></m-button>
+				<m-button class="selall"></m-button>
+			</div>
+		</m-drawer>
+		<m-drawer onclick="playlist.drawer(this);">
+			<m-border></m-border>
+			<m-button class="misc"></m-button>
+			<div>
+				<m-button class="sortlist"></m-button>
+				<m-button class="fileinf"></m-button>
+				<m-button class="miscopts"></m-button>
+			</div>
+		</m-drawer>
+		<div>
+			<m-black-area class="time all">3:45/3:45</m-black-area>
+			<m-row>
+				<m-button class="small playback prev"></m-button>
+				<m-button class="small playback play"></m-button>
+				<m-button class="small playback pause"></m-button>
+				<m-button class="small playback stop"></m-button>
+				<m-button class="small playback next"></m-button>
+				<m-button class="small playback eject"></m-button>
+				<m-black-area class="time estimate">
+					<div>00</div>
+					:
+					<div>04</div>
+				</m-black-area>
+			</m-row>
+		</div>
+		<m-drawer onclick="playlist.drawer(this);">
+			<m-border></m-border>
+			<m-button class="list"></m-button>
+			<div>
+				<m-button class="newlist"></m-button>
+				<m-button class="savelist"></m-button>
+				<m-button class="loadlist"></m-button>
+			</div>
+		</m-drawer>
+		<div>
+			<m-button class="scroll up"></m-button>
+			<m-button class="scroll down"></m-button>
+			<m-drag-zone class="big"></m-drag-zone>
+		</div>
+	</m-row>
+</m-content>

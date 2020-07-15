@@ -1,0 +1,91 @@
+#library .content > .row {
+	margin: 4px 1px 0 3px;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+}
+#library .field#search {
+	width: 100%;
+	margin: 5px 0 0 5px;
+}
+#library .textbtn {
+	height: 16px;
+}
+#searchlabel {
+	margin: 0 0 2px 3px;
+}
+#filetree {
+	width: 155px;
+	height: 401px;
+	background-color: black;
+	border-right: 1px solid #75748B;
+	border-bottom: 1px solid #75748B;
+}
+#lblib {
+	margin-top: 3px;
+}
+#lbdragsep {
+	width: 1px;
+	margin: 2px 6px 6px 6px;
+	background-color: #75748B;
+	cursor: url(/img/cur/PWSSIZE.CUR), pointer;
+}
+#tracktable {
+	height: 374px;
+	margin-bottom: 4px;
+	background-color: black;
+	border-right: 1px solid #75748B;
+	border-bottom: 1px solid #75748B;
+}
+#tracktable table {
+	width: 397px;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+#tracktable table tr {
+	border: none;
+}
+#tracktable thead td {
+	padding: 0px 4px 0px 4px;
+	background-color: #484878;
+	border-top: 1px solid #6C6CB4;
+	border-left: 1px solid #6C6CB4;
+	border-right: 1px solid #24243C;
+	border-bottom: 1px solid #24243C;
+	box-shadow: 1px 1px 0px 0px #12121E;
+}
+#tracktable thead .label {
+	height: 18px;
+	justify-content: left;
+}
+#lbplay {
+	width: 51px;
+}
+#lbenq {
+	width: 56px;
+	margin-left: 6px;
+}
+#lbplayall {
+	width: 51px;
+	margin-left: 6px;
+}
+#lbenqall {
+	width: 73px;
+	margin-left: 6px;
+}
+#lbstatus {
+	margin: -4px 3px 1px 11px;
+}
+#smalldragzone {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+#smalldragzone > div {
+	width: 7px;
+	height: 7px;
+	margin-right: 1px;
+	background-image: url(/img/smalldragzone.svg);
+	cursor: url(/img/cur/PSIZE.CUR), pointer;
+}

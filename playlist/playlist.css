@@ -1,0 +1,221 @@
+#playlist .title {
+	padding-left: 1px;
+}
+#playlist .selbtncntr {
+	display: flex;
+	margin: 7px 0px 6px 4px;
+}
+#playlist .selbtn {
+	width: 23px;
+	height: 18px;
+}
+#playlist .selbtn.aux {
+	display: none;
+}
+#playlist .selplborder {
+	width: 2px;
+	margin: 1px 0px 1px 0px;
+	border-radius: 18px 0 0 18px;
+	background-image: url(/img/selplborder.svg);
+}
+#playlist .plpbkbtn {
+	margin: 4px 0 0 2px;
+}
+#playlist table {
+	height: 263px;
+	width: 245px;
+	margin: 4px 0 0 3px;
+	color: rgb(0, 255, 0);
+	background-color: black;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+	font-family: monospace;
+	font-size: 10px;
+	text-align: left;
+}
+#playlist table td {
+	vertical-align: top;
+}
+#playlist table .num {
+	width: 1em;
+}
+#playlist table .duration {
+	text-align: right;
+}
+#infoplmin {
+	flex: 1;
+	/*display: flex;
+	align-items: center;*/
+	height: 9px;
+	padding-left: 2px;
+	margin: -1px 0px -1px -2px;
+	background-color: black;
+	color: rgb(0,255,0);
+	font-family: monospace;
+	font-size: 9px;
+}
+#scrollplbar {
+	height: 261px;
+	width: 6px;
+	margin: 4px 0 0 2px;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+}
+#scrollplbar div {
+	height: 18px;
+	width: 8px;
+	margin: 0 100% 0 -1px;
+	background-image: url(/img/scrollplbar.svg);
+	cursor: url(/img/cur/PVSCROLL.CUR), pointer;
+}
+#scrollplbar div:active {
+	background-image: url(/img/scrollplbar-pressed.svg);
+}
+#scrollplup {
+	height: 4px;
+	width: 8px;
+	margin: 1px 0 0 6px;
+	background-image: url(/img/scrollupplbtn.svg);
+}
+#scrollpldown {
+	height: 4px;
+	width: 8px;
+	margin: 2px 0 0 6px;
+	background-image: url(/img/scrolldownplbtn.svg);
+}
+#addplbtn {
+	background-image: url(/img/addplbtn.svg);
+}
+#urlplbtn {
+	background-image: url(/img/urlplbtn.svg);
+}
+#dirplbtn {
+	background-image: url(/img/dirplbtn.svg);
+}
+#fileplbtn {
+	background-image: url(/img/fileplbtn.svg);
+}
+#remplbtn {
+	background-image: url(/img/remplbtn.svg);
+}
+#rmiscplbtn {
+	background-image: url(/img/rmiscplbtn.svg);
+}
+#rallplbtn {
+	background-image: url(/img/rallplbtn.svg);
+}
+#cropplbtn {
+	background-image: url(/img/cropplbtn.svg);
+}
+#rselplbtn {
+	background-image: url(/img/rselplbtn.svg);
+}
+#selplbtn {
+	background-image: url(/img/selplbtn.svg);
+}
+#invplbtn {
+	background-image: url(/img/invplbtn.svg);
+}
+#zeroplbtn {
+	background-image: url(/img/zeroplbtn.svg);
+}
+#sallplbtn {
+	background-image: url(/img/sallplbtn.svg);
+}
+#miscplbtn {
+	background-image: url(/img/miscplbtn.svg);
+}
+#msortplbtn {
+	background-image: url(/img/msortplbtn.svg);
+}
+#infplbtn {
+	background-image: url(/img/infplbtn.svg);
+}
+#optsplbtn {
+	background-image: url(/img/optsplbtn.svg);
+}
+#listplbtn {
+	background-image: url(/img/listplbtn.svg);
+}
+#nlistplbtn {
+	background-image: url(/img/nlistplbtn.svg);
+}
+#slistplbtn {
+	background-image: url(/img/slistplbtn.svg);
+}
+#ldlistplbtn {
+	background-image: url(/img/ldlistplbtn.svg);
+}
+#remplblock {
+	margin-top: -47px;
+}
+#plpbk {
+	margin: 6px 1px 0 6px;
+}
+#plpbktime {
+	height: 10px;
+	width: 90px;
+	padding-left: 2px;
+	color: rgb(0,255,0);
+	font-size: 9px;
+	font-family: monospace;
+	background-color: black;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+}
+#prevplbtn {
+	height: 7px;
+	width: 6px;
+	background-image: url(/img/prevplbtn.svg);
+}
+#playplbtn {
+	height: 7px;
+	width: 8px;
+	background-image: url(/img/playplbtn.svg);
+}
+#pauseplbtn {
+	height: 7px;
+	width: 8px;
+	background-image: url(/img/pauseplbtn.svg);
+}
+#stopplbtn {
+	height: 7px;
+	width: 7px;
+	background-image: url(/img/stopplbtn.svg);
+}
+#nextplbtn {
+	height: 7px;
+	width: 6px;
+	background-image: url(/img/nextplbtn.svg);
+}
+#ejectplbtn {
+	height: 7px;
+	width: 7px;
+	background-image: url(/img/ejectplbtn.svg);
+}
+#plpbkest {
+	height: 8px;
+	width: 34px;
+	margin: 2px 0 0 4px;
+	background-color: black;
+	color: rgb(0,255,0);
+	font-size: 9px;
+	font-family: monospace;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+}
+#dragzone {
+	height: 13px;
+	width: 13px;
+	margin: 7px 0 0 3px;
+	background-image: url(/img/dragzone.svg);
+	cursor: url(/img/cur/PSIZE.CUR), pointer;
+}

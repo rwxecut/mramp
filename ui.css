@@ -1,0 +1,177 @@
+@font-face {
+	font-family: windows;
+	src: url(/fnt/LeviWindows.ttf);
+}
+body {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: black;
+	background-image: url(./darkness.png);
+	background-repeat: repeat;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+   outline: none;
+}
+.center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.row {
+	display: flex;
+}
+.win {
+	margin: 2px 0 0 2px;
+	/*width: 273px;*/
+	/*height: 100px;*/
+	padding-bottom: 5px;
+	user-select: none;
+	background-color: #25253A;
+	border-top: 1px solid #707083;
+	border-left: 1px solid #5F5F68;
+	outline: 1px solid #1A1927;
+
+	background: rgba(19,20,30,1);
+	background: -moz-linear-gradient(-45deg, rgba(19,20,30,1) 0%, rgba(56,56,89,1) 50%, rgba(30,30,47,1) 100%);
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(19,20,30,1)), color-stop(50%, rgba(56,56,89,1)), color-stop(100%, rgba(30,30,47,1)));
+	background: -webkit-linear-gradient(-45deg, rgba(19,20,30,1) 0%, rgba(56,56,89,1) 50%, rgba(30,30,47,1) 100%);
+	background: -o-linear-gradient(-45deg, rgba(19,20,30,1) 0%, rgba(56,56,89,1) 50%, rgba(30,30,47,1) 100%);
+	background: -ms-linear-gradient(-45deg, rgba(19,20,30,1) 0%, rgba(56,56,89,1) 50%, rgba(30,30,47,1) 100%);
+	background: linear-gradient(135deg, rgba(19,20,30,1) 0%, rgba(56,56,89,1) 50%, rgba(30,30,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#13141e', endColorstr='#1e1e2f', GradientType=1 );
+
+	cursor: url(/img/cur/PNORMAL.CUR), pointer;
+}
+.win .content {
+	margin: 3px 5px 0px 4px;
+	border-top: 1px solid #707083;
+	border-left: 1px solid #707083;
+	outline: 2px solid #101019;
+	box-shadow: 1px 1px 0 2px #707083
+}
+.win .title {
+	/*margin: 2px 4px 1px 3px;*/
+	margin: 2px 4px 1px 3px;
+}
+.win .title.mini {
+	display: none;
+	padding-bottom: 2px;
+}
+.win .titlelabel {
+	margin: 0 4px 0 4px;
+	color: white;
+  font-family: sans-serif;
+  font-size: 7px;
+}
+.win .titlebtn-close {
+	width: 7px;
+	height: 7px;
+	margin: 0 -2px 0 2px;
+	background-image: url(./img/close-inactive.svg);
+	cursor: url(/img/cur/CLOSE.CUR), pointer;
+}
+.win .titlebtn-close:active {
+	margin: -2px -3px -2px 1px;
+	border: 1px solid #A3946A;
+	background-image: :url(/img/close-pressed.svg);
+}
+.win:hover .titlebtn-close {
+	background-image: url(./img/close.svg);
+}
+.win .titlebtn-mini {
+	width: 7px;
+	height: 7px;
+	margin: 0 1px 0 2px;
+	background-color: rgb(0,255,0);
+}
+.win .titlebtn-max {
+	width: 7px;
+	height: 7px;
+	margin: 0 1px 0 2px;
+	background-color: rgb(255,0,0);
+}
+.win .bar {
+	flex-grow: 1;
+	height: 5px;
+	background: url(./img/bar-inactive.svg) repeat-x;
+	border: 1px solid #1E1F25;
+	border-radius: 2px;
+}
+.win:hover .bar {
+	background-image: url(./img/bar.svg);
+}
+.win .winbtn {
+	width: 22px;
+	height: 11px;
+	margin: 0 1px 0px 1px;
+}
+.win .label {
+	color: white;
+	font-family: windows;
+	font-size: 22px;
+	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.win .field {
+	height: 17px;
+	padding-left: 2px;
+	font-family: windows;
+	font-size: 22px;
+	color: rgb(0, 255, 0);
+	background-color: black;
+	border-top: 1px solid #171724;
+	border-left: 1px solid #171724;
+	border-right: 1px solid #6F6F83;
+	border-bottom: 1px solid #6F6F83;
+}
+.win .textbtn {
+	display: flex;
+	font-family: windows;
+	font-size: 22px;
+	color: #393941;
+	background-color: #bdced6;
+	border-top: 1px solid #fefefe;
+	border-left: 1px solid #fefefe;
+	border-right: 1px solid #acb5c6;
+	border-bottom: 1px solid #acb5c6;
+	outline: 1px solid #7a8394;
+	box-shadow: 1px 1px 0px 0.2px #4a5a6b;
+}
+.win .textbtn:active {
+	background-color: #7B8C9C;
+	color: #393942;
+	border-right-color: #7B8C9C;
+	border-bottom-color: #7B8C9C;
+	outline-color: #080810;
+	box-shadow: 0px -1px 0px 1px #182129;
+}
+.win .textbtn > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-left: 1px;
+}
+.win .textbtn:active > div {
+	border: 1px dotted black;
+}
+#auth {
+	display: none;
+	height: 94px;
+}
+#playlist {
+	display: none;
+	/*height: 316px;*/
+}
+#library {
+	display: none;
+	width: 585px;
+	height: 459px;
+}
+

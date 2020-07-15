@@ -1,0 +1,88 @@
+<m-title ondblclick="player.addcls('minified');">
+	<m-button class="title sine"></m-button>
+	<m-bar></m-bar>
+	<m-label>MRAMP</m-label>
+	<m-bar></m-bar>
+	<m-button class="title mini" onclick="player.addcls('minified');"></m-button>
+	<m-button class="title close"></m-button>
+</m-title>
+<m-mini-title ondblclick="player.rmcls('minified');">
+	<m-button class="title sine"></m-button>
+	<m-label>MRAMP</m-label>
+	<m-bar></m-bar>
+	<m-black-area class="histogram">
+		<canvas></canvas>
+	</m-black-area>
+	<m-bar></m-bar>
+	<m-black-area class="time">
+		<div>00</div>
+		:
+		<div>39</div>
+	</m-black-area>
+	<m-bar></m-bar>
+	<m-button class="small playback prev" onclick="player.prev();"></m-button>
+	<m-button class="small playback play" onclick="player.play();"></m-button>
+	<m-button class="small playback pause" onclick="player.pause();"></m-button>
+	<m-button class="small playback stop" onclick="player.stop();"></m-button>
+	<m-button class="small playback next" onclick="player.next();"></m-button>
+	<m-button class="small playback eject" onclick="player.eject();"></m-button>
+	<m-seek-bar class="rise" onmousedown="player.miniseek.click(event);">
+		<div class="hidden"></div>
+	</m-seek-bar>
+	<m-button class="title max" onclick="player.rmcls('minified');"></m-button>
+	<m-button class="title close"></m-button>
+</m-mini-title>
+<m-content onwheel="player.volume.wheel(event);">
+	<m-row>
+		<m-black-area class="visuals">
+			<a href="https://xecut.net" target="_blank"></a>
+			<m-playback-status class="stop"></m-playback-status>
+			<m-playback-time>
+				<div class="hundreds minutes"></div>
+				<div class="tens minutes">0</div>
+				<div class="ones minutes">0</div>
+				:
+				<div class="tens seconds">3</div>
+				<div class="ones seconds">9</div>
+			</m-playback-time>
+			<canvas></canvas>
+		</m-black-area>
+		<div>
+			<m-black-area class="songtitle" title="Song Title">
+				<div></div>
+			</m-black-area>
+			<m-row>
+				<m-black-area class="bitrate"></m-black-area>
+				<m-label>kbps</m-label>
+				<m-black-area class="samplerate"></m-black-area>
+				<m-label>kHz</m-label>
+				<m-channel class="mono">mono</m-channel>
+				<m-channel class="stereo active">stereo</m-channel>
+			</m-row>
+			<m-row>
+				<m-volume-bar onmousedown="player.volume.click(event);">
+					<div></div>
+				</m-volume-bar>
+				<m-pan-bar>
+					<div></div>
+				</m-pan-bar>
+				<m-button class="open auth" title="Toggle Authentication Form" onclick="auth.l('/auth/auth.html');"></m-button>
+				<m-button class="open playlist" title="Toggle Playlist Editor" onclick="playlist.load('/playlist/neoplaylist.html');"></m-button>
+			</m-row>
+		</div>
+	</m-row>
+	<m-seek-bar title="Seeking Bar" onmousedown="player.seek.click(event);">
+		<div class="hidden"></div>
+	</m-seek-bar>
+	<m-row>
+		<m-button class="big playback prev" title="Previous Track" onclick="player.prev();"></m-button>
+		<m-button class="big playback play" title="Play" onclick="player.play();"></m-button>
+		<m-button class="big playback pause" title="Pause" onclick="player.pause();"></m-button>
+		<m-button class="big playback stop" title="Stop" onclick="player.stop();"></m-button>
+		<m-button class="big playback next" title="Next Track" onclick="player.next();"></m-button>
+		<m-button class="big playback eject" title="Load File" onclick="player.eject();"></m-button>
+		<m-button class="big playback shuffle" title="Toggle Shuffle" onclick="player.shuffle();"></m-button>
+		<m-button class="big playback repeat" title="Toggle Repeat" onclick="player.repeat();"></m-button>
+		<m-button class="logo" title="Toggle Library" onclick="lib.l('/library/library.html');"></m-button>
+	</m-row>
+</m-content>
